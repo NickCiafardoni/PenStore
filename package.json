@@ -1,0 +1,22 @@
+{
+  "name": "pen-store",
+  "version": "0.0.1",
+  "description": "a simple pen store",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon server.js"
+  },
+  "author": "Nick Ciafardoni",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "mongodb": "^2.2.16",
+    "mongoose": "^5.4.19",
+    "multer": "^1.4.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.10"
+  }
+}
