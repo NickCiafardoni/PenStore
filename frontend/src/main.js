@@ -1,21 +1,17 @@
 import Vue from 'vue'
-import App from './App.vue'
-//import the vue router
-import VueRouter from 'vue-router'
-//tell vue to use the router
-Vue.use(VueRouter)
+import App from './App'
+import router from './router'
+import BootstrapVue from 'bootstrap-vue'
+import 'bootstrap/dist/css/bootstrap.css'
+import 'bootstrap-vue/dist/bootstrap-vue.css'
+
+Vue.use(BootstrapVue)
 Vue.config.productionTip = false
 
-import PenTypes from './components/PenTypes'
-
-const routes = [
-	{path: '/penTypes', component: PenTypes}
-]
-const router = new VueRouter({
-  routes, // short for routes: routes
-  mode: 'history'
-})
+/* eslint-disable no-new */
 new Vue({
-  render: function (h) { return h(App) },
-  router
-}).$mount('#app')
+  el: '#app',
+  router,
+  template: '<App/>',
+  components: { App }
+})
